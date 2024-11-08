@@ -1,0 +1,13 @@
+@startuml
+
+entity Book {
+  
+}
+
+entity Structure {
+  
+}
+
+  Structure .. Book
+
+@enduml

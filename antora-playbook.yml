@@ -15,3 +15,21 @@ ui:
       static_files:
       - .nojekyll
   - path: .nojekyll
+
+asciidoc:
+  extensions:
+    - asciidoctor-kroki
+  attributes:
+    page-pagination: true
+    hide-uri-scheme: ""
+    kroki-fetch-diagram: true
+    # Allow URI read to retrieve SVG on compilation
+    allow-uri-read: true
+    # use SVG unless otherwise specified
+    kroki-default-format: svg
+    # Make SVG inline so that we can get interactive (can be overridden by schema with "opts=none")
+    kroki-default-options: interactive
+    sectnums: "@"
+    xrefstyle: short@
+    listing-caption: Code
+    page-width-limit: none@
