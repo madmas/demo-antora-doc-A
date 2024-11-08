@@ -18,3 +18,11 @@ Bob --> Alice: Hi, Alice!
 ----
 include::partial$uml/domain/diagram.puml[]
 ----
+
+
+== with reference
+
+[plantuml, format="svg", id="diagram-sample", width="400px", align="center", title="Diagram - Sample"]
+----
+include::partial$uml/domain/refdia.puml[]
+----

@@ -1,0 +1,22 @@
+@startuml
+
+!startsub Layout
+
+skinparam linetype ortho
+skinparam Nodesep 120
+
+skinparam class {
+    FontStyle bold
+}
+hide empty members
+
+!endsub
+
+
+!startsub Refs
+	class core::Reference {
+	    +name: String
+	}
+!endsub
+
+@enduml

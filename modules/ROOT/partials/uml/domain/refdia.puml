@@ -1,0 +1,22 @@
+
+@startuml
+!$core_path=../core/core.puml
+
+!includesub $core_path!Layout
+
+package "ReferenceSamples" <<Frame>> {
+
+!includesub $core_path!Refs
+
+    package "Sample Refs" <<Rectangle>> {
+
+            class ReferenceValue {
+                + path: Path [0..1]
+            }
+    }
+
+}
+
+ReferenceValue -|> core::Reference : "extension"
+
+@enduml
