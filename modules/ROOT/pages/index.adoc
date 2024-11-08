@@ -20,9 +20,16 @@ include::partial$uml/domain/diagram.puml[]
 ----
 
 
-== with reference
+== with reference relative path
 
 [plantuml, format="svg", id="diagram-referencesample", width="400px", align="center", title="Diagram - ReferenceSample"]
 ----
 include::partial$uml/domain/refdia.puml[]
+----
+
+== with reference antora path
+
+[plantuml, format="svg", id="diagram-referencesample", width="400px", align="center", title="Diagram - ReferenceSample"]
+----
+include::partial$uml/domain/refdia-antorapath.puml[]
 ----
