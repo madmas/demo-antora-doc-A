@@ -22,7 +22,7 @@ include::partial$uml/domain/diagram.puml[]
 
 == with reference
 
-[plantuml, format="svg", id="diagram-sample", width="400px", align="center", title="Diagram - Sample"]
+[plantuml, format="svg", id="diagram-referencesample", width="400px", align="center", title="Diagram - ReferenceSample"]
 ----
 include::partial$uml/domain/refdia.puml[]
 ----
