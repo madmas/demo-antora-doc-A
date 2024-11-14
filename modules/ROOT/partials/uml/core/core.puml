@@ -19,4 +19,11 @@ hide empty members
 	}
 !endsub
 
+
+!startsub Something
+	class core::Something {
+	    +anything: String
+	}
+!endsub
+
 @enduml
