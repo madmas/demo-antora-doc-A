@@ -33,3 +33,13 @@ include::partial$uml/domain/refdia.puml[]
 ----
 include::partial$uml/domain/refdia-antorapath.puml[]
 ----
+
+
+== with reference antora path and kroki include
+
+[plantuml]
+----
+include::partial$uml/core/core.puml[]
+
+include::partial$uml/domain/refdia.puml[]
+----
