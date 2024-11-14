@@ -3,3 +3,6 @@ version: ~
 title: Doc A
 nav:
 - modules/ROOT/nav.adoc
+asciidoc:
+  attributes:
+    kroki-plantuml-include-paths: './modules/ROOT/partials/uml'
