@@ -1,6 +1,6 @@
-name: Doc-A
+name: Documentation
 version: ~
-title: Doc A
+title: Documentation
 nav:
 - modules/ROOT/nav.adoc
 asciidoc:

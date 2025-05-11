@@ -9,5 +9,5 @@ This documentation is a sample to document a webshop system.
 include::partial$uml/domain/webshop.puml[]
 ----
 
-include::webshop.adoc[leveloffset=+2]
+include::webshop.adoc[leveloffset=+1]
 
