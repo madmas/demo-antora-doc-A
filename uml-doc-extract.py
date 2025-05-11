@@ -6,7 +6,7 @@ def parse_uml_to_asciidoc(uml_file_path, output_file_path):
         uml_content = file.read()
 
     classes = re.findall(r"class\s+(\w+)\s*\{(?:\s*/' adoc ([^\n]*) '/)?([\s\S]*?)\}", uml_content)
-    relations = re.findall(r'(\w+)(?:\s*"([^"]*)"\s*)?\s*(<\|--|\*--|o--|--)(?:\s*"([^"]*)"\s*)?\s*(\w+)(?:\s*:\s*/\' adoc-relation (.*?) \'/)?', uml_content)
+    relations = re.findall(r'(\w+)(?:\s*"([^"]*)"\s*)?\s*(<\|--|\*--|o--|--)(?:\s*"([^"]*)"\s*)?\s*(\w+)(?:\s*/\' adoc-relation (.*?) \'/)?', uml_content)
 
     with open(output_file_path, 'w') as file:
         for class_name, class_comment, class_body in classes:
