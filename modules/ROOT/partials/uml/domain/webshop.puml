@@ -54,7 +54,7 @@ class Payment {
   + processPayment()
 }
 
-User <|-- Customer /' adoc-relation  '/
+User <|-- Customer /' adoc-relation Ein Kunde ist ein User, die seperate Modellierung dient dazu die technischen anforderungen vom Domainmodel zu trennen. '/
 Customer "1" -- "many" Order
 Order "1" -- "many" OrderItem
 OrderItem "many" -- "1" Product
