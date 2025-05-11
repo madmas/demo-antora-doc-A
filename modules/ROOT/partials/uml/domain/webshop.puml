@@ -1,0 +1,65 @@
+@startuml
+
+class User { /' adoc User represents a IAM of the webshop. '/
+  - userId: String  /' adoc-property UserId Combined from Y X and Z '/
+  - username: String /' adoc-property Username used for Logins '/
+  - email: String /' adoc-property EMail used for communcations '/
+  - password: String /' adoc-property Password saved as a salted Hash. '/
+  + login() /' adoc-method Login to validate with the given username and password. '/
+  + logout() /' adoc-method Logout to end the users session. '/
+}
+
+class Customer {
+  - customerId: String
+  - shippingAddress: String
+  - billingAddress: String
+  + placeOrder()
+  + viewOrderHistory()
+}
+
+class Product {
+  - productId: String
+  - name: String
+  - description: String
+  - price: Double
+  + getProductDetails()
+}
+
+class Order {
+  - orderId: String
+  - orderDate: Date
+  - totalAmount: Double
+  + calculateTotal()
+  + confirmOrder()
+}
+
+class OrderItem {
+  - orderItemId: String
+  - quantity: Int
+  + calculateSubtotal()
+}
+
+class ShoppingCart {
+  - cartId: String
+  - items: List<OrderItem>
+  + addItem()
+  + removeItem()
+  + calculateTotal()
+}
+
+class Payment {
+  - paymentId: String
+  - amount: Double
+  - paymentDate: Date
+  + processPayment()
+}
+
+User <|-- Customer /' adoc-relation  '/
+Customer "1" -- "many" Order
+Order "1" -- "many" OrderItem
+OrderItem "many" -- "1" Product
+Customer "1" -- "1" ShoppingCart
+ShoppingCart "1" -- "many" OrderItem
+Order "1" -- "1" Payment
+
+@enduml

@@ -1,56 +1,13 @@
-= Welcome!
+= Webshop documentation
 
-You are home.
+This documentation is a sample to document a webshop system.
 
+== Domain model
 
-== Inline PlantUML
-
-[plantuml, format=svg]
+[plantuml, format="svg", id="diagram-domain-model", width="400px", align="center", title="Diagram - Domainmodel"]
 ----
-Alice -> Bob: Hello, Bob!
-Bob --> Alice: Hi, Alice!
+include::partial$uml/domain/webshop.puml[]
 ----
 
-== Additional
+include::webshop.adoc[leveloffset=+2]
 
-[plantuml, format=svg]
-----
-@startuml
-
-!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
-@enduml
-----
-
-
-== Referenced / included from file
-
-
-[plantuml, format="svg", id="diagram-sample", width="400px", align="center", title="Diagram - Sample"]
-----
-include::partial$uml/domain/diagram.puml[]
-----
-
-
-== with reference relative path
-
-[plantuml, format="svg", id="diagram-referencesample", width="400px", align="center", title="Diagram - ReferenceSample"]
-----
-include::partial$uml/domain/refdia.puml[]
-----
-
-== with reference antora path
-
-[plantuml, format="svg", id="diagram-referencesample", width="400px", align="center", title="Diagram - ReferenceSample"]
-----
-include::partial$uml/domain/refdia-antorapath.puml[]
-----
-
-
-== with reference antora path and kroki include
-
-[plantuml]
-----
-include::partial$uml/core/core.puml[]
-
-include::partial$uml/domain/refdia.puml[]
-----

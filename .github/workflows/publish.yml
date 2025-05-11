@@ -27,6 +27,12 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
+    - name: Install Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    - name: Run UML Doumentation Extraction
+      run: python uml-doc-extract.py modules/ROOT/partials/uml/domain/webshop.puml modules/ROOT/pages/webshop.adoc
     - name: Install Antora
       run: npm i antora @antora/site-generator-default asciidoctor-kroki
     - name: Generate Site
