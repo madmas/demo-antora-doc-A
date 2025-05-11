@@ -11,6 +11,17 @@ Alice -> Bob: Hello, Bob!
 Bob --> Alice: Hi, Alice!
 ----
 
+== Additional
+
+[plantuml, format=svg]
+----
+@startuml
+
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+@enduml
+----
+
+
 == Referenced / included from file
 
 
