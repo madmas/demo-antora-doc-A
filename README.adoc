@@ -1,0 +1,7 @@
+= Diagram Doku Talk: Demo
+
+This is the demo repository for my talk "Diagramm oder Doku - warum nicht beides?"
+
+It contains a Antora site with an github actions configuration.
+
+To showcase how diagrams can serve as a single source of truth, there is a python script included that extracts all additional information from a PlantUML file entered into comments.

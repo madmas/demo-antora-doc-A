@@ -1,6 +1,6 @@
 @startuml
 
-class User { /' adoc User represents a IAM of the webshop. '/
+class User { /' adoc User model represents a user in context of IAM of the webshop. '/
   - userId: String  /' adoc-property UserId Combined from Y X and Z '/
   - username: String /' adoc-property Username used for Logins '/
   - email: String /' adoc-property EMail used for communcations '/

@@ -21,7 +21,7 @@ def parse_uml_to_asciidoc(uml_file_path, output_file_path):
                 file.write("|===\n| *Sichtbarkeit* | *Name* | *Typ* | *Beschreibung*\n")
                 for visibility, name, type_, description in properties:
                     visibility_word = "öffentlich" if visibility == "+" else "privat"
-                    file.write(f"| {visibility_word} | {name} | {type_} | {description or ''}\n")
+                    file.write(f"| {visibility_word}\n| {name}\n| {type_}\n| {description or ''}\n\n")
                 file.write("|===\n\n")
 
             if methods:
@@ -29,7 +29,7 @@ def parse_uml_to_asciidoc(uml_file_path, output_file_path):
                 file.write("|===\n| *Sichtbarkeit* | *Name* | *Rückgabetyp* | *Beschreibung*\n")
                 for visibility, name, return_type, description in methods:
                     visibility_word = "öffentlich" if visibility == "+" else "privat"
-                    file.write(f"| {visibility_word} | {name} | {return_type or ''} | {description or ''}\n")
+                    file.write(f"| {visibility_word}\n| {name}\n| {return_type or ''}\n| {description or ''}\n\n")
                 file.write("|===\n\n")
 
             class_relations = [rel for rel in relations if class_name == rel[0] or class_name == rel[4]]
@@ -43,7 +43,7 @@ def parse_uml_to_asciidoc(uml_file_path, output_file_path):
                         "*--": "Komposition",
                         "o--": "Aggregation"
                     }.get(rel_type, rel_type)
-                    file.write(f"| {from_class} | {from_card or ''} | {rel_type_word} | {to_card or ''} | {to_class} | {description or ''}\n")
+                    file.write(f"| {from_class}\n| {from_card or ''}\n| {rel_type_word}\n| {to_card or ''}\n| {to_class}\n| {description or ''}\n\n")
                 file.write("|===\n\n")
 
 if __name__ == "__main__":
