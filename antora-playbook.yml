@@ -22,7 +22,7 @@ asciidoc:
   attributes:
     page-pagination: true
     hide-uri-scheme: ""
-    kroki-server-url: 'http://misc.schlichting.de:8000/'
+    kroki-server-url: 'http://kroki.schlichting.de'
     kroki-fetch-diagram: true
     # Allow URI read to retrieve SVG on compilation
     allow-uri-read: true
